@@ -10,7 +10,7 @@ exports.handler = async function (event, context) {
     // Prepare data for the Facebook Messenger API request
     const data = {
       "messaging_product": "whatsapp",
-      "to": "917510171483",
+      "to": "971504308877",
       "type": "template",
       "template": {
         "name": "bookaljazeera_complaint",
