@@ -2,7 +2,7 @@
 const axios = require('axios');
 
 // Define the Lambda function for handling contact form submissions
-exports.handlerContact = async function (event, context) {
+exports.handler = async function (event, context) {
   try {
     // Parse incoming JSON data from the event body
     const { name, number, email, msg } = JSON.parse(event.body);
