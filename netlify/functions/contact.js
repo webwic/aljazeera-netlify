@@ -1,5 +1,7 @@
 
 // Function for handling contact form submissions
+const axios = require('axios');
+
 exports.handlerContact = async function (event, context) {
     try {
       const { name, number, email, msg } = JSON.parse(event.body);

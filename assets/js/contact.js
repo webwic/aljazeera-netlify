@@ -1,23 +1,22 @@
 // contact.js
 
-document.addEventListener('DOMContentLoaded', function () {
-    const contactForm = document.querySelector('#contactForm');
-  
-    if (contactForm) {
-      contactForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-  
-        const name = contactForm.querySelector('input[name="name"]').value;
-        const number = contactForm.querySelector('input[name="number"]').value;
-        const email = contactForm.querySelector('input[name="email"]').value;
-        const msg = contactForm.querySelector('input[name="msg"]').value;
-  
-        const data = {
-          name,
-          number,
-          email,
-          msg
-        };
+const contactForm = document.querySelector('#contactForm');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const name = contactForm.querySelector('input[name="name"]').value;
+    const number = contactForm.querySelector('input[name="number"]').value;
+    const email = contactForm.querySelector('input[name="email"]').value;
+    const msg = contactForm.querySelector('input[name="msg"]').value;
+
+    const data = {
+      name,
+      number,
+      email,
+      msg
+    };
   
         // You can use the fetch API or any other method to send the data to the server
         // For simplicity, I'll use the fetch API in this example
