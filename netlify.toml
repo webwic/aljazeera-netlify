@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/.netlify/functions/sendWhatsApp"  
+  to = "/.netlify/functions/sendWhatsApp"    
+  status = 200                           
+  force = true                             
+  [headers]
+    "Content-Type" = "application/json"
+  methods = ["POST"]

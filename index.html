@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="besttaxi,uae,taxiservice,taxi,citytour,aljazeera,limousine " />
+  <meta name="description"
+    content="We are one of the most trusted and customer friendly taxi service within UAE.we offer an online booking service which is assisted with 24/7 customer service." />
+  <meta name="author" content="" />
+
+  <title>AL Jazeera Limousine Service | Book Your Ride </title>
+
+  <link rel="icon" type="image/x-icon" href="images/favicon 2.png">
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a style="width: 100px;" class="navbar-brand" href="/">
+            <span>
+              <img style="width: 175%;" src="images/logo.png" alt="">
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/service"> Services </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section style="padding-bottom: 0px" class=" slider_section ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7 ">
+            <div class="box">
+              <div class="detail-box">
+                <h4>
+                  We Move Together.
+                </h4>
+                <h1 class="l" style="width:300px">
+                  AL JAZEERA
+                </h1>
+              </div>
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <!-- <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol> -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+
+                    <div class="img-box">
+                      <img src="images/taxi_service_03.png" alt="">
+                    </div>
+                  </div>
+                  <!-- <div class="carousel-item">
+                    <div class="img-box">
+                      <img src="images/taxi_service_03.png" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-box">
+                      <img src="images/taxi_service_03.png" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-box">
+                      <img src="images/taxi_service_03.png" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-box">
+                      <img src="images/taxi_service_03.png" alt="">
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+
+              <div class="btn-box">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5 ">
+            <div class="slider_form">
+              <h4>
+                Get A Taxi Now
+              </h4>
+              <form id="bookingForm" action="/" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="date" placeholder="Date" required>
+                <input type="text" name="ploc" placeholder="Pick Up Location" required>
+                <input type="text" name="dloc" placeholder="Drop Off Location" required>
+                <div class="btm_input">
+                  <input type="text" name="number" placeholder="Your Phone Number" required>
+                  <button type="submit">Book Now</button>
+                </div>
+                <p style="color:green; font-size: 20px;">
+                  <%=sucess%>
+                </p>
+                <p style="color:red; font-size: 20px;">
+                  <%=failure%>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-lg-2 offset-md-1">
+          <div class="detail-box">
+            <h2>
+              About <br>
+
+            </h2>
+            <p>
+              Our sincere commitment to providing quality service has earned us a reputation in the market with a rapid
+              increase in the clientele base.
+
+              In order to improve the proximity to our clients and to serve them better, we have initiated our
+              operational bases at Ras al Khaimah.
+            </p>
+            <a href="/about">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="/images/1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Service <br>
+          We Offer
+        </h2>
+      </div>
+      <div class="service_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/delivery-man.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Chaffuer Service
+            </h5>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/airplane.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Airport Transfer
+            </h5>
+
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/backpack.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Luggage Transfer
+            </h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          What <br>
+          Client <br>
+          Says
+        </h2>
+      </div>
+      <div class="client_container">
+        <div class="carousel-wrap ">
+          <div class="owl-carousel">
+
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img style="width: 90px;" src="images/client-2.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h3>
+                    Piotr Sywak
+                  </h3>
+                  <p>
+                    It was very nice trip with you guys! Enterair crew will recommend you every time. See you again!
+                    <br><br><br><br>
+                  </p>
+                  <img src="images/quote.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img style="width: 90px;" src="images/client-3.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h3>
+                    Kinga Przy
+                  </h3>
+                  <p>
+                    Very good company, professional, great communication in English, interesting trips!! I am in love
+                    with Dubai and Abu Zabi - unforgettable impressions! I hope for the next trips with kind drivers. I
+                    heartily recommend it!!!
+                  </p>
+                  <img src="images/quote.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img style="width: 90px;" src="images/client-1.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h3>
+                    Samer Mouwanes
+                  </h3>
+                  <p>
+                    I used them twice so far, family of 4, from RAK AH Village to Dubai airport, impeccable service,
+                    timely and fast response on my queries , and very affordable prices. Will use them again whenever
+                    needed...
+                  </p>
+                  <img src="images/quote.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img style="width: 90px;" src="images/client-7.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h3>
+                    Klaudia Walkowska
+                  </h3>
+                  <p>
+                    Amazing trip! Very comfortable cars! I highly recommend. They approach everything professionally.
+                    <br><br><br>
+                  </p>
+                  <img src="images/quote.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img style="width: 90px;" src="images/client-5.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h3>
+                    saif aljehad
+                  </h3>
+                  <p>
+                    Wooow .... I must comment on the professional approach and the quality of service provided by this
+                    company which have made me to highly recommend with a 5-Star rating ..... wishing a best future for
+                    this company and hoping to avail your service again shortly
+                  </p>
+                  <img src="images/quote.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img style="width: 90px;" src="images/client-4.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h3>
+                    Katerina Selyukh
+                  </h3>
+                  <p>
+                    This is the best Gide ever!
+                    Sab’s office was in our hotel Ras al Khaimah Hotel and we was together with friends all time) whole
+                    our vacation! We took Excursion in Desert, Abu Dabi and Dubai cheeper than Amex or Pegas are
+                    offering! But you have a car for 6, not a bus for 30z Sab is like a privet driver- will go
+                    everywhere you want, any location. Strongly recommend!
+                    We are still friends.
+                  </p>
+                  <img src="images/quote.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img style="width: 90px;" src="images/client-6.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h3>
+                    Евгений Семенов
+                  </h3>
+                  <p>
+                    I ordered two excursions, Dubai and Oman, it was as promised there were no additional fees, I
+                    recommend especially Dubai is 100% better than through Pigas and Anex tour there they just ride the
+                    buses and that's it, but we were not asked where we were stopped there, by the time limited. The
+                    staff is very professional, although they almost do not know Russian, but there is no language
+                    barrier if you do not know much English). Cars are all clean and tidy.
+                  </p>
+                  <img src="images/quote.png" alt="">
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Any Problems <br>
+          Any Questions
+        </h2>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5  offset-md-1">
+          <div class="contact_form">
+            <h4>
+              Get In touch
+            </h4>
+            <form action="/contact" method="post">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="text" name="number" placeholder="Phone Number" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <input type="text" name="msg" placeholder="Message" class="message_input" required>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src="images/5124557.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- why section -->
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Why <br>
+          Choose Us
+        </h2>
+      </div>
+      <div class="why_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/delivery-man-white.png" alt="" class="img-1">
+            <img src="images/delivery-man-black.png" alt="" class="img-2">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Best Drivers
+            </h5>
+            <p>
+              Dedicated and dependable Car Driver with excellent record of customer satisfaction. Stickler for
+              punctuality and safety.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/shield-white.png" alt="" class="img-1">
+            <img src="images/shield-black.png" alt="" class="img-2">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Safe and Secure
+            </h5>
+            <p>
+              In order to keep the ones you love safe, it is essential to put their well being in the hands of
+              experienced professionals you trust. We treat our customers as our family.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/repairing-service-white.png" alt="" class="img-1">
+            <img src="images/repairing-service-black.png" alt="" class="img-2">
+          </div>
+          <div class="detail-box">
+            <h5>
+              24x7 support
+            </h5>
+            <p>
+              Our focus on continuous improvement and monitoring ensures that we can deliver all services at a
+              consistently high quality level.Through our discipline customer care we assure 24 hours uninterupted
+              service for our customers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding-top layout_padding2-bottom">
+    <div class="container">
+      <div class="box">
+        <div class="info_form">
+          <h4>
+            Visit us
+          </h4>
+          <p style="text-align: center; margin: 5px"> Office NO 2 <br></p>
+          <p style="text-align: center; margin: 5px">Ras Al Khaimah, Uae <br></p>
+          <p style="text-align: center; margin: 5px"> E-mail: info@aljazeeralimo.com <br></p>
+          <p style="text-align: center; margin: 5px"> Tel: +971504308877 <br></p>
+          <p style="text-align: center; margin: 5px"> Ext:384 <br></p>
+
+        </div>
+
+        <div class="info_social">
+
+          <a href="https://www.instagram.com/aljazeera_limousine/?hl=en">
+            <img src="images/instagram.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <div class="container">
+      <p>
+        &copy; 2022 All Rights Reserved By
+        <a href="/">aljazeera limousine</a>
+        <br>Designed and Developed by <a href="https://www.webwic.com">webwic</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+
+
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 2
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+  <script type="text/javascript" src="/assets/js/booking.js"> </script>
+</body>
+
+</html>
